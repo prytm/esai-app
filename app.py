@@ -19,8 +19,8 @@ def predict_with_tflite(interpreter, img_array):
     return interpreter.get_tensor(output_details[0]['index'])
 
 # Load models
-model_nonpotato = load_tflite_model("D:\\DOKDAT 24\\MODEL KENTANG_NON\\nokentang.tflite")
-model_potato_type = load_tflite_model("D:\\DOKDAT 24\\MODEL KLASIFIKASI\\KENTANG_KUALITAS.tflite")
+model_nonpotato = load_tflite_model("nokentang.tflite")
+model_potato_type = load_tflite_model("KENTANG_KUALITAS.tflite")
 
 class_names_nonpotato = ['Non-Potato', 'Potato']
 class_names_potato_type = [
