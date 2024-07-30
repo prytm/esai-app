@@ -2,7 +2,8 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image as keras_image
-from PIL import image
+import cv2
+from PIL import Image
 
 # Load TFLite model
 def load_tflite_model(model_path):
@@ -164,7 +165,7 @@ st.markdown(
         padding: 10px;
     }
     .block-container {
-        padding: 4rem 1rem 1rem 1rem; /* Add padding to the top */
+        padding: 1rem;
     }
     .css-1v0mbdj {
         width: 100%;
