@@ -4,4 +4,4 @@ pandas
 numpy
 scikit-learn
 opencv-python
-Pillow
+pillow
