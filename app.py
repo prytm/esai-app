@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image as keras_image
-import PIL.Image as Image
+from PIL import Image
 
 # Load TFLite model
 def load_tflite_model(model_path):
@@ -95,6 +95,11 @@ st.set_page_config(page_title="KentangQI", page_icon="🥔", layout="wide")
 
 st.title("KentangQI 🥔")
 st.write("Unggah gambar kentang atau gunakan kamera untuk memprediksi apakah gambar tersebut adalah kentang atau bukan, dan jika itu adalah kentang, jenis kentangnya akan diprediksi.")
+
+# Guidance for photo
+st.write("**Panduan Memfoto Kentang:**")
+st.write("- Pastikan kentang dalam kondisi bersih dan tidak ada gangguan objek lain di sekitarnya.")
+st.write("- Bersihkan kentang dari tanah atau kotoran sebelum memotret.")
 
 # Add a camera input option
 camera_option = st.radio("Pilih sumber gambar:", ("Unggah Gambar", "Gunakan Kamera"))
