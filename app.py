@@ -2,7 +2,7 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 from tensorflow.keras.preprocessing import image as keras_image
-from PIL import Image
+import PIL.Image as Image
 
 # Load TFLite model
 def load_tflite_model(model_path):
