@@ -158,7 +158,7 @@ quantity = st.sidebar.number_input("Jumlah (kg)", value=1)
 total_price = price_per_kg * quantity
 st.sidebar.write(f"**Total Harga:** Rp {total_price}")
 
-# Add CSS for styling
+# Add CSS for background color of prediction results
 st.markdown(
     """
     <style>
@@ -168,11 +168,11 @@ st.markdown(
         border-radius: 10px;
         padding: 10px;
     }
-    .block-container {
-        padding: 4rem 1rem 1rem 1rem; /* Add padding to the top */
+    .st-success {
+        background-color: #DFF2BF !important;
     }
-    .css-1v0mbdj {
-        width: 100%;
+    .st-error {
+        background-color: #FFBABA !important;
     }
     </style>
     """,
